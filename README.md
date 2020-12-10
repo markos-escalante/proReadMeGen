@@ -1,3 +1,2 @@
-# proReadMeGen
-
+# README generator
 ## Description 
