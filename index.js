@@ -2,7 +2,16 @@ const inquirer = require("inquirer")
 
 inquirer
     .prompt([
-        
+        {
+            type = "input",
+            name = "name",
+            message = "What is the title of your project?"
+        },
+        {
+            type: "input",
+            name: "name",
+            message = ""
+        }
     ])
 
 // function to write README file
