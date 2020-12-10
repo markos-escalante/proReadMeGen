@@ -75,8 +75,17 @@ function writeToFile(fileName, data) {
 // function to initialize program
 function init() {
     inquirer.prompt(questions).then((data) => {
+        axios
+            .get("https://api.github.com/users/" + data.github)
+            .then(res => {
+                console.log(res);
+            })
         const userInput = generateMarkdown(data);
-        writeToFile("README.md", userInput);
+        fs.writeFile("README.md", userInput, function (err) {
+            if (err) {
+                throw err;
+            }
+        });
     });
 }
 
