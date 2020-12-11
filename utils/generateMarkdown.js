@@ -31,6 +31,8 @@ You can utilize the Table of Contents to be taken to the corresponding section o
 ## Questions?
     Github Profile: ${data.github}
     Email: ${data.email}
+
+Should you have any questions regarding this application, please feel free to email me at ${data.email}.
 `;
 }
 
